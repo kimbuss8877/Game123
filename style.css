@@ -1,0 +1,24 @@
+a {
+    text-decoration-line: none;
+    color: white;
+}
+.navbar{
+    display:  inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 8px 600px;
+}
+.navbar_logo{
+
+    font-size: 24px;
+    color: white;
+}
+.navbar_menu{
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+}
