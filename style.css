@@ -2,23 +2,23 @@ a {
     text-decoration-line: none;
     color: white;
 }
-.navbar{
-    display:  inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkgrey;
-    padding: 8px 600px;
-}
-.navbar_logo{
+*{margin: 0;padding: 0; box-sizing: border-box;}
+.wrap_inner{width: 1160px;margin: auto; height: 1080px;padding: 0 20px;}
+header{
+    display: flex;
+     justify-content: space-between;
+     padding: 8px 12px;
+     align-items: center;
+    height: 100px; background: rgb(1, 2, 53);
 
-    font-size: 24px;
-    color: white;
 }
-.navbar_menu{
-    display: inline-flex;
-    list-style: none;
-    padding-left: 0;
+
+.wrap_menu{   
+   display: flex;
+   list-style: none;
+   padding-left: 0;
+  
 }
-.navbar_menu li{
-    padding: 8px 12px;
+.wrap_menu li{
+    padding: 20px 30px;
 }
