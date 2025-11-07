@@ -1,0 +1,116 @@
+apt install mariadb-server
+
+maria
+재시작
+systemctl restart mariadb
+
+create database member123;
+
+삭제
+drop database member123;
+drop database test;
+
+데이터베이스 확인crea
+show databases;
+
+MariaDB[none] > use 테이블 이름
+MariaDB [(none)]> use study;
+Database changed
+
+
+MariaDB [study1]> show tables; 테이블 내용 보기
+Empty set (0.002 sec)
+
+DB 선택하기
+use [데이터베이스 이름];
+ 
+
+테이블 생성
+CREATE TABLE 테이블이름
+(
+    필드 정보(필드 이름, 타입, 제약 등등),
+    필드 정보,
+    ...
+)
+describe membertbl       db구조 보기
+select * from membertbl  db보기
+
+테이블 구조 확인
+MariaDB [study1]> describe [테이블 이름];
+테이블 제거
+MariaDB [study1]> DROP TABLE [테이블 이름];
+데이터 넣기
+MariaDB [member123]> insert into memberinfo (iden, mobile, paas,email) value ('kimbus', 01054,'rlaqja','kim@hh');
+
+
+
+<head>
+  <!-- <title> Document </title> -->
+        <!-- <meta>태그 사용해서 설명작성 브라우저 등 정보전달-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Best </title>
+</head>
+<body>
+    <!-- //사용자 직접 보여지는 구간 -->
+    <!--<img src="../img/Whale.png" alt="Whale"/>-->
+
+  <nav>    
+      <div class="nav-logo">
+        <img src ="./img/best-icon.png"></img>
+        <a href ="">BEST</a>
+      </div>       
+      <ui class="nav-menu">
+        <li><a href="#" class="link active">Home</a></li> <!-- target="_blank" </a>-->
+        <li><a href="./SeaS/index.html" class="link">웹게임</a></li>
+        <li><a href="#" class="link">다운로드게임</a></li>            
+        <li><a onclick="Login_On()" class="link">로그인</a></li> 
+        <li><a href="#" class="link">회원가입</a></li> 
+      </ui>   
+    </nav>
+
+<nav id="IconWeb_1"> 
+    </nav>
+
+
+    <nav id="nav2" style="display: block;">
+      <form action="signup.php" method="POST">
+       <h1 class="control">회원가입</h1>
+       <div action="mywebsite.com" method="POST">
+
+        <div class="form-control"></div>
+        <label for="name">Name</label>
+        <input type="name" placeholder="Enter name"/>
+        </div>
+        <div class="form-control"></div>
+        <label for="name">전화번호</label>
+        <input type="number" placeholder="Enter a number" />
+        </div>
+        <div class="form-control"></div>
+        <label for="name">비밀번호</label>
+        <input type="password" placeholder="Enter your password" />
+        </div>
+        <div class="form-control"></div>
+        <label for="name">이메일</label>
+        <input type="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control"></div>
+        <input type="button" value="Submit" />
+        </div>
+    </form>
+     
+    </nav>
+    <script>
+      function Login_On()
+      {
+        document.getElementById("nav2").style.display="block";
+      }
+      function Login_Off()
+      {
+        document.getElementById("nav2").style.display="none";
+      }
+    </script>
+</body>
+

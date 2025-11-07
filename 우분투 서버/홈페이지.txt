@@ -1,0 +1,30 @@
+html 기본 틀 만들기
+! + Tab
+
+
+html 처음에는 전체를 감싸는 div 
+
+
+
+<link rel="stylesheet" href="style.css"> 
+
+<nav>    
+      <div class="nav-logo">
+        <img src ="./img/best-icon.png"></img>
+        <a href ="">BEST</a>
+      </div>       
+      <ui class="nav-menu">
+        <li><a href="#" class="link active">Home</a></li> <!-- target="_blank" </a>-->
+        <li><a href="./SeaS/index.html" class="link">웹게임</a></li>
+        <li><a href="#" class="link">다운로드게임</a></li>
+        <li><a href="#" class="link">About</a></li>       
+        <li><a onclick="Login_On()" class="link">로그인</a></li> 
+      </ui>   
+    </nav>
+
+
+
+
+
+
+
